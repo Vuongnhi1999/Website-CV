@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SẢN PHẨM | DEGREY VIET NAM</title>
+
+    <!-- css  -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/product.css" />
+
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" />
+</head>
+
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="header__logo col-lg-2 header__item">
+                    <a class="header-logo__a" href="/index.html">
+                        <img src="assets/images/logo.webp" alt="" class="header-logo__a-img" />
+                    </a>
+                </div>
+                <div class="header__menu col-lg-6 header__item">
+                    <ul class="header-menu__ul">
+                        <li class="header-menu-ul__li">
+                            <a class="header-menu-ul__li--a" href="/index.html">Trang chủ</a>
+                        </li>
+                        <li class="header-menu-ul__li">
+                            <a class="header-menu-ul__li--a" href="/product.html">Sản phẩm</a>
+                        </li>
+                        <li class="header-menu-ul__li">
+                            <a class="header-menu-ul__li--a" href="/store.html">Store</a>
+                        </li>
+                        <li class="header-menu-ul__li">
+                            <a class="header-menu-ul__li--a" href="/aboutus.html">Giới thiệu</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__search col-lg-3 header__item">
+                    <div class="header-search__wrap">
+                        <div class="header-search__icon">
+                            <a href="#" class="header-search__icon-a">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                        <div class="header-search__input">
+                            <input class="header-search__input--search" type="text" placeholder="Tìm kiếm sản phẩm" />
+                        </div>
+                    </div>
+                </div>
+                <div class="header__shop col-lg-1 header__item">
+                    <a href="#" class="header-shop__wrap">
+                        <div class="header-shop__icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <p>Giỏ hàng</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div class="container wall">
+            <img src="/assets/images/product/anhBia.jpg" class="wall__img" alt="">
+        </div>
+
+        <div class="container title">
+            <h2 class="title__content">Tất cả sản phẩm</h2>
+
+            <select name="sort" id="sort" class="selection">
+                <option value="sort">Sắp xếp</option>
+                <option value="sanPhamNoiBat">Sản phẩm nổi bật</option>
+                <option value="tangDan">Giá: Tăng dần</option>
+                <option value="giamDan">Giá: Giảm dần</option>
+                <option value="AdenZ">Tên: A-Z</option>
+                <option value="ZdenA">Tên: Z-A</option>
+                <option value="old">Cũ nhất</option>
+                <option value="new">Mới nhất</option>
+                <option value="hot">Bán chạy nhất</option>
+                <option value="tonKho">Tồn kho</option>
+            </select>
+        </div>
+
+
+        <div class="container filter-main">
+            <div class="filter">
+                <div class="filter__title">
+                    <p class="filter__title--content">Bộ Lọc</p>
+                </div>
+                <select name="price" class="selection">
+                    <option value="sort">Lọc Giá</option>
+                    <option value="duoi100000">Dưới 100.000₫</option>
+                    <option value="1-25">100.000₫ - 250.000₫</option>
+                    <option value="25-50">250.000₫ - 500.000₫</option>
+                    <option value="50-80">500.000₫ - 800.000₫</option>
+                    <option value="tren800">Trên 800.000₫</option>
+                </select>
+            </div>
+
+            <div class="type">
+                <select name="type" id="type" class="selection">
+                    <option value="sort">Loại</option>
+                    <option value="aoKhoat">Áo khoác</option>
+                    <option value="aoThun">Áo thun</option>
+                    <option value="baLo">Balo</option>
+                    <option value="tui">Túi</option>
+                </select>
+            </div>
+
+            <div class="size">
+                <select name="size" id="size" class="selection">
+                    <option value="sort">Size</option>
+                    <option value="sizeS">S</option>
+                    <option value="sizeM">M</option>
+                    <option value="sizeL">L</option>
+                    <option value="sizeXS">XS</option>
+                </select>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <section class="section-product">
+            <div class="container">
+                <div class="product-list">
+
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/1.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Túi Da Degrey Travel Leather Bag - TVB</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            990,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            1,200,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/2.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Túi Da Degrey Leather Long Tote - DLLT</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            330,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            450,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/3.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>ÁO CROPTOP THỂ THAO DEGREY.MADMONKS VIETNAM 84 - CDV84</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            380,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            440,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/4.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Túi Da Degrey Leather Basic Bag - DLBB</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            380,000
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            420,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/5.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Áo thể thao Degrey.Madmonks Vietnam 84 - DV84</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            190,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            350,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/9.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Áo khoác da Degrey.Madmonks Biker Jacket V2.0 - JBK 2.0</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            1,200,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            1,350,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/7.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Túi Degrey Box Bag Họ - BBH</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            190,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            350,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/2.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Degrey.Madmonks Quần Disco - QDC</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            190,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            350,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/9.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Balo Degrey Drawstring Backpack - DSBP</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            190,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            350,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/10.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Degrey.Madmonks Quần Disco - QDC</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            190,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            350,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/5.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Degrey.Madmonks Áo Khoác Báo - AKB</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            190,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            350,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/12.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Degrey.Madmonks Quần Baggy Jean Dark Grey - DMBJ</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            190,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            350,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/13.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Degrey Leather ToteBook - DLT</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            190,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            350,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/7.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Degrey.Madmonks Áo khoác Bomber Lông - JBB</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            190,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            350,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/15.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Degrey.Madmonks Jacket Biker - JBK</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            190,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            350,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/16.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Quần Dù Túi Hộp Degrey - QTH</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            190,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            350,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/17.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Degrey Nano Backpack - DNN</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            190,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            350,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/18.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Degrey Army Backpack - DAB</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            190,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            350,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/19.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>balo collab DG x CND</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            190,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            350,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/16.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Basic Backpack Degrey Trắng - BBD Trắng</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            190,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            350,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/21.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Degrey.Madmonks Black Mamba skinny - DMMP</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            190,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            350,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/22.jpg" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Degrey Leather Basic Balo - LBB</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            190,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            350,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/23.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Áo Tay Dài Căn Bản Xám - TDCB Xám</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            190,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            350,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/24.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Degrey Premium Leather Backpack - PLBP</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            190,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            350,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/25.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Balo Quốc Dân Trắng - BQD Trắng</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            190,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            350,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/26.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Balo Quốc Dân - BQD</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            190,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            350,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/27.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Áo Thun Basic Degrey Kem - ATBD Kem</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            190,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            350,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/28.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Áo Thun Basic Degrey rêu - ATBD rêu</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            190,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            350,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/29.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Áo Thun Basic Degrey Xám - ATBD Xám</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            190,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            350,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+                    <div class="product-list-item">
+                        <a href="" class="cursor">
+                            <div class="product-list-item__inner cursor">
+                                <img src="/assets/images/product/29.webp" alt="" class="product-list-item__inner--img" />
+                                <div class="product-content">
+                                    <div class="product-content__desc">
+                                        <p>Áo Thun Basic Degrey Xám - ATBD Xám</p>
+                                    </div>
+                                    <div class="product-content__price">
+                                        <span class="product-content__price--new-sale">
+                                            190,000₫
+                                        </span>
+                                        <del class="product-content__price--old">
+                                            350,000₫
+                                        </del>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="container">
+            <h4 class="footer-head">Về DEGREY</h4>
+            <div class="footer-top">
+                <div class="footer-top-item">
+                    Cái tên Degrey được tạo ra rất ngẫu hứng, xuất phát từ “Chuỗi ngày u
+                    buồn về sự nghiệp, tương lai trong quá khứ của chính mình” – theo
+                    lời chia sẻ của Degrey’s founder.
+                </div>
+                <div class="footer-top-item">
+                    <ul class="footer-top-item__ul">
+                        <li class="footer-top-item__ul--li">
+                            <b>Địa chỉ </b>
+                            <br />
+                            <b>-Sài Gòn:</b>
+                            <br />
+
+                            43 Huỳnh Văn Bánh P.17 Q.Phú Nhuận 1041 Luỹ Bán Bích P.Tân Thành
+                            Q.Tân Phú
+                            <br />
+                            26 Lý Tự Trọng Q.1 - The New Playground
+                            <br />
+                            <b> -Đà Lạt:</b>
+                            <br />
+                            11 Khu Hoà Bình P.1 Điện thoại: 0336311117
+                        </li>
+                        <li class="footer-top-item__ul--li">
+                            <b>Điện thoại:</b>
+                            0336311117
+                        </li>
+                        <li class="footer-top-item__ul--li">
+                            <b> Email:</b>
+                            degrey.vn@gmail.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top-item">
+                    <div class="footer-top-item__title">Hỗ trợ khách hàng</div>
+                    <ul class="footer-top-item__ul">
+                        <li class="footer-top-item__ul--li">Hệ thống cửa hàng</li>
+                        <li class="footer-top-item__ul--li">Hướng dẫn đặt hàng</li>
+                        <li class="footer-top-item__ul--li">Chính sách và quy định</li>
+                        <li class="footer-top-item__ul--li">Chính sách bảo mật</li>
+                        <li class="footer-top-item__ul--li">Thông tin sở hữu</li>
+                    </ul>
+                </div>
+                <div class="footer-top-item">
+                    <div class="footer-top-item__title">Chăm sóc khách hàng</div>
+                    <div class="footer-top-item__phone">
+                        <i class="fa-solid fa-phone-volume footer-top-item__phone--icon"></i>
+                        <span class="footer-top-item__phone--numberphone">0336311117</span>
+                    </div>
+                    <div class="footer-top-item__desc">
+                        <h3 class="footer-top-item__desc--title">Follow Us</h3>
+                        <div class="desc-icon">
+                            <i class="fa-brands fa-facebook desc-icon__item"></i>
+                            <i class="fa-brands fa-twitter desc-icon__item"></i>
+                            <i class="fa-brands fa-instagram desc-icon__item"></i>
+                            <i class="fa-brands fa-google-plus-g desc-icon__item"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                Copyright © 2023 DEGREY VIETNAM. Powered by Haravan
+            </div>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/jquery.slim.min.js"></script>
+    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+
+/* start header   */
+.header{
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 999999;
+}
+.header .container{
+    justify-content: center;
+    text-align: center;
+}
+.header__item{
+    padding-top: 15px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+.header .header-logo__a-img{
+    height: 54px;
+    width: auto;
+}
+.header .header-logo__a-img:hover{
+    cursor: pointer;
+}
+.header .header-menu__ul{
+    list-style-type: none;
+    display: flex;
+}
+.header .header-menu-ul__li{
+    display: inline-block;
+    padding: 15px;
+    height: 100%;
+}
+.header .header-menu-ul__li:hover{
+    cursor: pointer;
+    border-bottom: 2px solid #000000;
+}
+.header-menu-ul__li--a{
+    color: black;
+    text-decoration: none;
+}
+.header-menu-ul__li--a:hover{
+    color: black;
+    text-decoration: none;
+}
+.header-search__wrap{
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 15px;
+    overflow: hidden;
+}
+.header-search__input--search{
+    border: none;
+    padding-left: 10px;
+}
+.header-search__icon-a{
+    color: black;
+}
+.header-search__icon-a:hover{
+    color: black;
+}
+.header-shop__wrap{
+    color: black;
+}
+.header-shop__wrap:hover{
+    color: black;
+    text-decoration: none;
+}
+
+/* end header  */
+
+/* start footer  */
+footer{
+    margin-top: 30px;
+    background: #000000;
+    color: #fff;
+}
+.footer-head{
+    color: #9b9b9b;
+    padding: 20px;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-top-item{
+    max-width: 23%;
+}
+.footer-top-item__title{
+    color: #9b9b9b;
+    font-size: 20px;
+}
+.footer-top-item__ul li{
+    list-style-type: disc;
+}
+.desc-icon__item{
+    padding: 5px;
+}
+.footer-bottom{
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+/* end footer  */

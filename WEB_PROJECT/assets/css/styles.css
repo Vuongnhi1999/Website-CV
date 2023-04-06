@@ -269,8 +269,25 @@
 
 /* more */
 
-
-
+ /* Mobile width : <768px  */
+ @media only screen and (max-width : 767px){
+    .section-two__list{
+        flex-wrap: wrap;
+    }
+    .section-two-list-item{
+        max-width: calc(50% - 5px);
+    }
+    
+ }
+ /* tablet: width >=768px and width <1200px  */
+ @media only screen and (min-width : 768px) and (max-width : 1199px){
+     .section-two__list{
+         flex-wrap: wrap;
+     }
+     .section-two-list-item{
+         max-width: calc(50% - 5px);
+     }
+ }
 
 
 

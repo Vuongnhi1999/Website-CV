@@ -19,18 +19,30 @@
 
   <!-- bootstrap  -->
   <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" />
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha512-qWVvreMuH9i0DrugcOtifxdtZVBBL0X75r9YweXsdCHtXUidlctw7NXg5KVP3ITPtqZ2S575A0wFkvgS2anqSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <![endif]-->
+
 </head>
 
 <body>
   <header class="header">
     <div class="container">
       <div class="row">
-        <div class="header__logo col-lg-2 header__item">
+        <div class="header__logo col-xl-2 col-md-3 col-10 header__item">
+          <!-- mobile, tablet  -->
+          <label for="nav-mobile__input" class="header-logo__bars">
+            <i class="fa-solid fa-bars header-logo__bars--icon"></i>
+          </label>
+          <!-- mobile, tablet  -->
           <a class="header-logo__a" href="/index.html">
             <img src="assets/images/logo.webp" alt="" class="header-logo__a-img" />
           </a>
         </div>
-        <div class="header__menu col-lg-6 header__item">
+
+        <!-- nav PC  -->
+        <nav class="header__menu col-xl-6 header__item">
           <ul class="header-menu__ul">
             <li class="header-menu-ul__li">
               <a class="header-menu-ul__li--a" href="/index.html">Trang chủ</a>
@@ -45,8 +57,9 @@
               <a class="header-menu-ul__li--a" href="/aboutus.html">Giới thiệu</a>
             </li>
           </ul>
-        </div>
-        <div class="header__search col-lg-3 header__item">
+        </nav>
+
+        <div class="header__search col-xl-3 col-md-6 header__item">
           <div class="header-search__wrap">
             <div class="header-search__icon">
               <a href="#" class="header-search__icon-a">
@@ -58,16 +71,49 @@
             </div>
           </div>
         </div>
-        <div class="header__shop col-lg-1 header__item">
+        <div class="header__shop col-xl-1 col-md-3 col-2 header__item">
+          <!-- Mobile, tablet  -->
+          <div class="search-mobile">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
           <a href="#" class="header-shop__wrap">
             <div class="header-shop__icon">
               <i class="fa-solid fa-cart-shopping"></i>
             </div>
-            <p>Giỏ hàng</p>
+            <p class="header-shop__title">Giỏ hàng</p>
           </a>
         </div>
       </div>
     </div>
+
+    <!-- nav MOBILE, TABLET  -->
+    <input type="checkbox" hidden name="" class="nav-input" id="nav-mobile__input">
+
+
+    <label for="nav-mobile__input" class="overlay"></label>
+
+    <nav class="nav-mobile header__item">
+      <label for="nav-mobile__input" class="nav-mobile__close">
+        <i class="fa-regular fa-circle-xmark nav-mobile__close--icon"></i>
+      </label>
+      <ul class="nav-mobile__ul">
+        <li class="nav-mobile-ul__li">
+          <a class="nav-mobile-ul__li--a" href="/index.html">Trang chủ</a>
+        </li>
+        <hr>
+        <li class="nav-mobile-ul__li">
+          <a class="nav-mobile-ul__li--a" href="/product.html">Sản phẩm</a>
+        </li>
+        <hr>
+        <li class="nav-mobile-ul__li">
+          <a class="nav-mobile-ul__li--a" href="/store.html">Store</a>
+        </li>
+        <hr>
+        <li class="nav-mobile-ul__li">
+          <a class="nav-mobile-ul__li--a" href="/aboutus.html">Giới thiệu</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <main>

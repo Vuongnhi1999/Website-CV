@@ -107,3 +107,120 @@ footer{
 
 
 /* end footer  */
+
+ /*start RESPONSIVE */
+
+/* nút ấn menu  */
+.header-logo__bars{
+    display: none;
+    padding-right: 30px;
+}
+.header-logo__bars:hover{
+    cursor: pointer;
+}
+/* lớp phủ  */
+.overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.3s;
+}
+/* định dạng menu bars màn hình mobile , tablet  */
+ /* header  */
+.nav-mobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    max-width: 100%;
+    background: #fff;
+    transform: translateX(-100%);
+    transition: transform linear 0.3s;
+}
+.nav-mobile-ul__li{
+    padding-top: 24px;
+}
+.nav-mobile-ul__li--a{
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 10px;
+    margin-left: 20px;
+    font-size: 1.4rem;
+}
+.nav-mobile-ul__li--a:hover{
+    text-decoration: none;
+    color: black;
+}
+.nav-mobile__close{
+    font-size: 1.4rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+}
+.nav-input:checked ~ .overlay{
+    display: block;
+}
+.nav-input:checked ~ .nav-mobile{
+    transform: translateX(0%);
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.header__shop{
+    display: flex;
+}
+.search-mobile{
+    display: none;
+    padding-right: 25px;
+    
+}
+
+/* Mobile width : <768px  */
+@media only screen and (max-width : 767px){
+    /* header  */
+    .header-logo__bars{
+        display: inline-block;
+        position: absolute;
+        left: 15px;
+        top: 30px;
+    }
+    .header__menu{
+        display: none;
+    }
+    .header__search{
+        display: none;
+    }
+    .search-mobile{
+        display: block;
+    }
+    .header-shop__title{
+        display: none;
+    }
+    .header-logo__a-img{
+        padding-left: 65px;
+    }
+    
+}
+/* tablet: width >=768px and width <1200px  */
+@media only screen and (min-width : 768px) and (max-width : 1199px){
+    /* header  */
+    .header-logo__bars{
+        display: inline-block;
+    }
+    .header__menu{
+        display: none;
+    }
+}
+
